@@ -1,0 +1,73 @@
+/* Reset default browser spacing for all elements */
+* {
+    margin: 0; /* Removes default outer spacing */
+    padding: 0; /* Removes default inner spacing */
+}
+
+/* Styling for the game title */
+#title {
+    color: #6B8F71;/* Soft green color for text */
+    font-size: 50px;/* Large font size for visibility */
+}
+
+/* Overall page styling */
+body {
+    background-color: #1D1E18; /* Dark background for contrast */
+    text-align: center; /* Centers all inline content horizontally */
+}
+
+/* Container that wraps the game board */
+.container {
+    height: 70vh;/* Takes 70% of viewport height */
+    display: flex;/* Enables flexbox layout */
+    justify-content: center;/* Centers content horizontally */
+    align-items: center;/* Centers content vertically */
+}
+
+/* Game board (3x3 grid container) */
+.game {
+    height: 60vmin; /* Responsive height based on viewport */
+    width: 60vmin; /* Keeps board square */
+    display: flex;/* Uses flexbox for layout */
+    flex-wrap: wrap;/* Allows items to wrap into rows */
+    justify-content: center;/* Centers items horizontally */
+    align-items: center;/* Centers items vertically */
+    gap: 1.5vmin;/* Space between boxes */
+}
+
+/* Individual tic-tac-toe boxes */
+.box {
+    height: 18vmin;/* Each box scales with screen size */
+    width: 18vmin; /* Keeps square shape */
+    border-radius: 1rem;/* Rounded corners */
+    border: none;/* Removes default button border */
+    font-size: 10vmin;/* Large text for X and O */
+    background-color: #788AA3; /* Muted grey background */
+    color: #AAD2BA;/* Light green text for contrast */
+}
+
+/* Reset button styling */
+#reset {
+    padding: 1rem;/* Adds space inside button */
+    font-size: 1.25rem;/* Medium text size */
+    border-radius: 1rem;/* Rounded corners */
+    border: none;/* Removes default border */
+    background-color: #6B8F71; /* Green background */
+    color: #1D1E18;/* Dark text for readability */
+}
+
+/* Winning message text */
+#msg {
+    color: #6B8F71; /* Same green theme */
+    font-size: 8vmin;/* Large responsive text */
+}
+
+/* Container holding the winning message */
+.msg-container {
+    margin-top: 10px; /* Adds spacing above message */
+}
+
+/* Utility class to hide elements */
+.hide {
+    display: none;/* Completely removes element from layout */
+}
