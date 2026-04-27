@@ -58,6 +58,7 @@ body {
 
 /* Winning message text */
 #msg {
+    font-family: 'Times New Roman', Times, serif; /*Font family for winning message*/
     color: #6B8F71; /* Same green theme */
     font-size: 8vmin;/* Large responsive text */
 }
